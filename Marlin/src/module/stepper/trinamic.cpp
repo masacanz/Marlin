@@ -164,6 +164,15 @@ enum StealthIndex : uint8_t {
 #ifndef TMC_Z4_BAUD_RATE
   #define TMC_Z4_BAUD_RATE TMC_BAUD_RATE
 #endif
+#ifndef TMC_I_BAUD_RATE
+  #define TMC_I_BAUD_RATE TMC_BAUD_RATE
+#endif
+#ifndef TMC_J_BAUD_RATE
+  #define TMC_J_BAUD_RATE TMC_BAUD_RATE
+#endif
+#ifndef TMC_K_BAUD_RATE
+  #define TMC_K_BAUD_RATE TMC_BAUD_RATE
+#endif
 #ifndef TMC_E0_BAUD_RATE
   #define TMC_E0_BAUD_RATE TMC_BAUD_RATE
 #endif
@@ -834,12 +843,8 @@ void restore_trinamic_drivers() {
 void reset_trinamic_drivers() {
   static constexpr bool stealthchop_by_axis[] = LOGICAL_AXIS_ARRAY(
     ENABLED(STEALTHCHOP_E),
-    ENABLED(STEALTHCHOP_XY),
-    ENABLED(STEALTHCHOP_XY),
-    ENABLED(STEALTHCHOP_Z),
-    ENABLED(STEALTHCHOP_I),
-    ENABLED(STEALTHCHOP_J),
-    ENABLED(STEALTHCHOP_K)
+    ENABLED(STEALTHCHOP_XY), ENABLED(STEALTHCHOP_XY), ENABLED(STEALTHCHOP_Z),
+    ENABLED(STEALTHCHOP_I), ENABLED(STEALTHCHOP_J), ENABLED(STEALTHCHOP_K)
   );
 
   #if AXIS_IS_TMC(X)
@@ -955,7 +960,7 @@ void reset_trinamic_drivers() {
 // TMC Slave Address Conflict Detection
 //
 // Conflict detection is performed in the following way. Similar methods are used for
-// hardware and software serial, but the implementations are indepenent.
+// hardware and software serial, but the implementations are independent.
 //
 // 1. Populate a data structure with UART parameters and addresses for all possible axis.
 //      If an axis is not in use, populate it with recognizable placeholder data.
