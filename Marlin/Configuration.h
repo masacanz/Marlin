@@ -1182,11 +1182,11 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 0.00, -70.00, -1.38 }            // Customised by masacanz
+#define NOZZLE_TO_PROBE_OFFSET { -42.00, -10.00, -1.38 }            // Customised by masacanz
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define PROBING_MARGIN 40            // Customised by masacanz
+#define PROBING_MARGIN 30            // Customised by masacanz
 
 // X and Y axis travel speed (mm/min) between probes
 #define XY_PROBE_FEEDRATE (133*60)
