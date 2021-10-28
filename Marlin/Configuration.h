@@ -1182,7 +1182,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -43.00, -10.00, -0.33 }            // Customised by masacanz
+#define NOZZLE_TO_PROBE_OFFSET { -46.00, -10.00, -0.70 }            // Customised by masacanz
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1372,8 +1372,8 @@
 // @section machine
 
 // The size of the printable area
-#define X_BED_SIZE 235
-#define Y_BED_SIZE 235
+#define X_BED_SIZE 220           // Customised by masacanz
+#define Y_BED_SIZE 220           // Customised by masacanz
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
