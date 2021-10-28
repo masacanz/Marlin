@@ -1372,8 +1372,8 @@
 // @section machine
 
 // The size of the printable area
-#define X_BED_SIZE 220           // Customised by masacanz
-#define Y_BED_SIZE 220           // Customised by masacanz
+#define X_BED_SIZE 225           // Customised by masacanz
+#define Y_BED_SIZE 225           // Customised by masacanz
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
