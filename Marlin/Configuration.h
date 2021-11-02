@@ -604,9 +604,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  39.58            // Customised by masacanz - output from autotune
-    #define DEFAULT_Ki   5.43            // Customised by masacanz - output from autotune
-    #define DEFAULT_Kd  72.14            // Customised by masacanz - output from autotune
+    #define DEFAULT_Kp  36.97            // Customised by masacanz - output from autotune
+    #define DEFAULT_Ki   4.96            // Customised by masacanz - output from autotune
+    #define DEFAULT_Kd  68.91            // Customised by masacanz - output from autotune
   #endif
 #endif // PIDTEMP
 
@@ -1182,7 +1182,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -46.00, -10.00, -0.75 }            // Customised by masacanz
+#define NOZZLE_TO_PROBE_OFFSET { -46.00, -10.00, -0.55 }            // Customised by masacanz
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
