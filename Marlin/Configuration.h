@@ -604,9 +604,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  36.97            // Customised by masacanz - output from autotune
-    #define DEFAULT_Ki   4.96            // Customised by masacanz - output from autotune
-    #define DEFAULT_Kd  68.91            // Customised by masacanz - output from autotune
+    #define DEFAULT_Kp  35.45            // Customised by masacanz - output from autotune
+    #define DEFAULT_Ki   4.70            // Customised by masacanz - output from autotune
+    #define DEFAULT_Kd  66.79            // Customised by masacanz - output from autotune
   #endif
 #endif // PIDTEMP
 
